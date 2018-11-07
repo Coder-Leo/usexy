@@ -5,10 +5,10 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
-
-class UsexyItem(scrapy.Item):
+class UsexyItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    urls = Field()
+    title = Field()
